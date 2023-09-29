@@ -57,7 +57,7 @@ const server = http.createServer(async (req, res) => {
   if (req.method === "GET" && req.url === "/get-gold") {
     try {
       const goldValue = await _goldDigger();
-      res.writeHead(200, { "Content-Type": "application/json" });
+      res.writeHead(200, { "Content-Type": "text/plain" });
       res.end(JSON.stringify({ goldValue }));
     } catch (err) {
       res.writeHead(500, { "Content-Type": "text/plain" });
