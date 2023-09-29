@@ -29,7 +29,7 @@ const _goldDigger = async function () {
   try {
     const date = Date.now();
     const response = await axios(
-      "http://bcast.kakagold.in:7767/VOTSBroadcastStreaming/Services/xml/GetLiveRateByTemplateID/kaka?_=" +
+      "http://bcast.rakshabullion.com:7767/VOTSBroadcastStreaming/Services/xml/GetLiveRateByTemplateID/raksha?_=" +
         date
     );
 
