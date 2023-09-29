@@ -3,7 +3,7 @@ const http = require("http");
 const axios = function (url) {
   return new Promise((resolve, reject) => {
     return http.get(
-      "http://bcast.kakagold.in:7767/VOTSBroadcastStreaming/Services/xml/GetLiveRateByTemplateID/kaka?_=" +
+      "http://bcast.rakshabullion.com:7767/VOTSBroadcastStreaming/Services/xml/GetLiveRateByTemplateID/raksha?_=" +
         Date.now(),
       function (response) {
         if (response.statusCode === 200) {
